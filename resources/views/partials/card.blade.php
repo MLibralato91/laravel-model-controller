@@ -6,6 +6,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ $movie->title }}</h5>
                     <p class="card-text">{{ $movie->original_title }}</p>
+                    <p class=""><span class="fw-bolder pe-1">Votazione:</span>{{ $movie->vote }}</p>
                     <a href="{{ route('movies.show', ['id' => $movie->id]) }}" class="btn btn-danger">info</a>
                 </div>
             </div>

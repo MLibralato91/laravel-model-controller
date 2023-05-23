@@ -1,1 +1,24 @@
 @import '~bootstrap/scss/bootstrap';
+
+header {
+    nav {
+        height: 90px;
+        background-color: rgb(133, 129, 129)
+    }
+
+    h1 {
+        a {
+            text-decoration: none;
+
+            color: white;
+
+            &:hover {
+                color: rgb(168, 17, 17);
+            }
+        }
+    }
+}
+
+body {
+    background-color: black;
+}

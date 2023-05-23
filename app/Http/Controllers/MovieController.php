@@ -22,7 +22,7 @@ class MovieController extends Controller
     public function home()
     {
 
-        $movies = Movie::orderBy('vote', 'asc')->limit(4)->get();
+        $movies = Movie::orderBy('vote', 'desc')->limit(4)->get();
 
 
 

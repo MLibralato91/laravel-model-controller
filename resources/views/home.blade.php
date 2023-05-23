@@ -3,13 +3,17 @@
     <section>
         <div class="container">
 
-            <p>Benvenuto nel sito peggiore della storia. Avrai la possibilità di visualizzare solamente 8 Film</p>
+            <h2 class="text-danger pt-3">Migliori Film della settimana</h2>
 
 
-            <a href="{{ route('movies.index') }}">Vai all lista dei film</a>
+            <a class="text-light" href="{{ route('movies.index') }}">Vai all lista dei film</a>
 
             @include('partials.card')
         </div>
 
     </section>
 @endsection
+
+<style lang="scss" scoped>
+
+</style>

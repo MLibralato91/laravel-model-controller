@@ -2,14 +2,14 @@
 @section('content')
     <section>
         <div class="container">
-            <h1>Best Movies</h1>
+            <h2 class="pt-2">Tutti i Titoli del Momento</h2>
             @include('partials.card')
         </div>
     </section>
 @endsection
 
 <style lang="scss" scoped>
-    h1 {
+    h2 {
         color: red;
     }
 </style>
