@@ -16,7 +16,7 @@
 </head>
 
 <body>
-
+    @include('partials.header')
     <main>
         @yield('content')
     </main>
@@ -24,3 +24,9 @@
 </body>
 
 </html>
+<style lang="scss" scoped>
+    main {
+        background-color: black;
+        height: 100vh;
+    }
+</style>

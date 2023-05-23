@@ -16,7 +16,16 @@ class MovieController extends Controller
     }
     public function show($id)
     {
-        $movie = Movie::find($id);
+        $movie = Movie::findOrFail($id);
         return view('movies.show', compact('movie'));
+    }
+    public function home()
+    {
+
+        $movies = Movie::orderBy('vote', 'asc')->limit(3)->get();
+
+
+
+        return view('movies.index', compact('movies'));
     }
 }
